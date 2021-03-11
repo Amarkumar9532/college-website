@@ -13,8 +13,5 @@ $q="INSERT INTO admission (name,email,select_course,phone,select_batch,message) 
 mysqli_close($con);
  ?>
     <?php 
-            if($status==1) 
-                echo " Your Record sucessfully"; 
-            else 
-                echo "Your Record  not sucessfully"; 
+            header("Location: index.html");
             ?>
