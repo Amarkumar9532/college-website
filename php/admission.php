@@ -24,8 +24,5 @@ values('$name','$fname','$mname','$email','$nation',$admission_number,'$dob','$s
 mysqli_close($con);
  ?>
     <?php 
-            if($status==1) 
-                echo " Your Record sucessfully"; 
-            else 
-                echo "Your Record  not sucessfully"; 
+          header("Location: index.html");
             ?>
